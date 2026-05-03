@@ -43,17 +43,17 @@
 
 > Figma 기반 UI를 Vue 애플리케이션으로 구현하고, `json-server`를 활용해 API 흐름을 시연할 수 있도록 만든 팀 프로젝트입니다.
 
-## 팀원 소개
+## Team Members & Roles
 
-| 팀원 | GitHub | 소개 |
-| --- | --- | --- |
-| we5046 | [@we5046](https://github.com/we5046) | 프로젝트 배포, API 연동 환경 구성, 프론트엔드 기능 구현 |
-| heokyeongmin390 | [@heokyeongmin390](https://github.com/heokyeongmin390) | 프론트엔드 화면 구현 및 사용자 플로우 개선 |
-| 7aeHoon | [@7aeHoon](https://github.com/7aeHoon) | UI 컴포넌트 구현 및 페이지 완성도 개선 |
-| 한승연 | - | 프론트엔드 기능 구현 및 데이터 흐름 개선 |
-| hoon | - | 화면 구성 및 기능 구현 기여 |
+| 이름 | GitHub | 담당 역할 | 주요 작업 |
+| --- | --- | --- | --- |
+| we5046 | [@we5046](https://github.com/we5046) | 배포 및 프론트엔드 개발 | Vercel/Render 배포 환경 구성, API 연동 설정, 화면 기능 구현 |
+| heokyeongmin390 | [@heokyeongmin390](https://github.com/heokyeongmin390) | 프론트엔드 개발 | 사용자 플로우 구현, 페이지 UI 개선, 기능 연결 |
+| 7aeHoon | [@7aeHoon](https://github.com/7aeHoon) | UI 개발 | 공통 UI 컴포넌트 구현, 페이지 완성도 개선 |
+| 한승연 | GitHub 주소 입력 | 프론트엔드 개발 | 담당 기능 입력 |
+| hoon | GitHub 주소 입력 | 프론트엔드 개발 | 담당 기능 입력 |
 
-> 팀원별 담당 영역과 한줄 소개는 실제 역할에 맞게 자유롭게 수정하면 됩니다.
+> 각 팀원의 GitHub 주소와 담당 기능은 실제 역할에 맞게 수정하면 됩니다.
 
 ## 주요 기능
 
