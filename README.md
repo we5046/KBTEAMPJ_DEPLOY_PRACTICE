@@ -1,11 +1,158 @@
-Description:
-💰 [KB] IT's Your Life 7기 22회차 6조 스켈레톤 프로젝트
-본 프로젝트는 Vue 3와 json-server를 활용한 '가계부 서비스 앱' 개발 프로젝트입니다.
-기획부터 설계, 구현, 배포의 전 과정을 경험하며 팀 협업 및 형상 관리 역량 강화를 목표로 합니다.
+# 가계쀼 Boo-jet
 
-🛠 Tech Stack:
+<p align="center">
+  <img src="./TeamProject/src/assets/Logo.png" alt="가계쀼 로고" width="120" />
+</p>
 
-- Frontend: Vue 3 (Vite), Pinia, Axios, Vue Router
-- Backend: json-server (REST API)
-- Design: Bootstrap 5, Figma
-- team2
+<h3 align="center">부부와 개인이 함께 쓰는 KB 스타일 가계부 웹 애플리케이션</h3>
+
+<p align="center">
+  <a href="https://kbteampj-deploy-practice.vercel.app/auth/login">
+    <strong>배포된 프로젝트 체험하기</strong>
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Vue-3.5-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" alt="Vue" />
+  <img src="https://img.shields.io/badge/Vite-8.0-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Pinia-3.0-F7D336?style=flat-square&logo=vue.js&logoColor=111" alt="Pinia" />
+  <img src="https://img.shields.io/badge/json--server-API-555?style=flat-square" alt="json-server" />
+  <img src="https://img.shields.io/badge/Vercel-Frontend-000?style=flat-square&logo=vercel" alt="Vercel" />
+  <img src="https://img.shields.io/badge/Render-Backend-46E3B7?style=flat-square&logo=render&logoColor=111" alt="Render" />
+</p>
+
+<p align="center">
+  <a href="#소개">소개</a> ·
+  <a href="#팀원-소개">팀원 소개</a> ·
+  <a href="#주요-기능">주요 기능</a> ·
+  <a href="#기술-스택">기술 스택</a> ·
+  <a href="#실행-방법">실행 방법</a> ·
+  <a href="#배포-구조">배포 구조</a>
+</p>
+
+<br />
+
+<p align="center">
+  <img src="./TeamProject/src/assets/happy_sunglass_Character.png" alt="가계쀼 캐릭터" width="260" />
+</p>
+
+## 소개
+
+**가계쀼**는 개인 가계부와 부부 공동 가계부를 함께 관리할 수 있는 웹 앱입니다.  
+로그인, 회원가입, 거래 내역 관리, 카테고리별 지출 확인, 커플 연결, 공동 목표 관리까지 하나의 흐름으로 사용할 수 있도록 구성했습니다.
+
+> Figma 기반 UI를 Vue 애플리케이션으로 구현하고, `json-server`를 활용해 API 흐름을 시연할 수 있도록 만든 팀 프로젝트입니다.
+
+## 팀원 소개
+
+| 팀원 | GitHub | 소개 |
+| --- | --- | --- |
+| we5046 | [@we5046](https://github.com/we5046) | 프로젝트 배포, API 연동 환경 구성, 프론트엔드 기능 구현 |
+| heokyeongmin390 | [@heokyeongmin390](https://github.com/heokyeongmin390) | 프론트엔드 화면 구현 및 사용자 플로우 개선 |
+| 7aeHoon | [@7aeHoon](https://github.com/7aeHoon) | UI 컴포넌트 구현 및 페이지 완성도 개선 |
+| 한승연 | - | 프론트엔드 기능 구현 및 데이터 흐름 개선 |
+| hoon | - | 화면 구성 및 기능 구현 기여 |
+
+> 팀원별 담당 영역과 한줄 소개는 실제 역할에 맞게 자유롭게 수정하면 됩니다.
+
+## 주요 기능
+
+- **회원 관리**: 회원가입, 로그인, 세션 유지, 마이페이지 정보 수정
+- **개인 가계부**: 수입/지출 등록, 수정, 삭제 및 거래 내역 조회
+- **카테고리 분석**: 카테고리별 지출 비중과 월별 흐름 확인
+- **커플 연결**: 사용자 검색, 커플 요청, 수락/취소/해제
+- **부부 가계부**: 두 사용자의 거래 데이터를 함께 비교하고 관리
+- **공동 목표**: 커플 목표 생성, 진행률 확인, 목표별 거래 연결
+- **반응형 UI**: 데스크톱과 모바일 환경을 고려한 레이아웃
+
+## 기술 스택
+
+| 영역 | 사용 기술 |
+| --- | --- |
+| Frontend | Vue 3, Vite, Vue Router |
+| State | Pinia |
+| UI | Bootstrap, Font Awesome, Lucide Vue |
+| Chart | Chart.js, vue-chartjs |
+| API | Axios |
+| Mock Backend | json-server |
+| Deploy | Vercel, Render |
+
+## 프로젝트 구조
+
+```txt
+KBTEAMPJ_DEPLOY_PRACTICE/
+  TeamProject/
+    src/
+      api/          # axios 인스턴스와 API 요청 함수
+      assets/       # 로고, 캐릭터, 프로필 이미지, 공통 스타일
+      components/   # 화면 단위 UI 컴포넌트
+      layouts/      # 인증/기본 레이아웃
+      pages/        # 라우트 페이지
+      router/       # Vue Router 설정
+      service/      # 사용자 탈퇴 등 도메인 서비스
+      stores/       # Pinia 상태 관리
+    db.json         # json-server mock database
+    vercel.json     # Vercel SPA rewrite 설정
+```
+
+## 실행 방법
+
+```bash
+cd TeamProject
+npm install
+```
+
+프로젝트 루트에 `.env` 파일을 만들고 API 주소를 설정합니다.
+
+```env
+VITE_API_BASE_URL=http://localhost:3001
+```
+
+Mock API 서버와 개발 서버를 각각 실행합니다.
+
+```bash
+npm run server
+npm run dev
+```
+
+## 배포 구조
+
+이 프로젝트는 프론트엔드와 Mock API 서버를 분리해서 배포합니다.
+
+```txt
+Vercel
+  Vue/Vite Frontend
+  https://kbteampj-deploy-practice.vercel.app/auth/login
+
+Render
+  json-server Backend
+  db.json
+```
+
+### Vercel 설정
+
+```txt
+Framework Preset: Vite
+Build Command: npm run build
+Output Directory: dist
+Root Directory: TeamProject
+```
+
+환경변수:
+
+```env
+VITE_API_BASE_URL=https://kb-budget-api.onrender.com
+```
+
+### Render 설정
+
+```txt
+Runtime: Node
+Build Command: npm install
+Start Command: npm start
+Root Directory: TeamProject
+```
+
+## 참고
+
+`json-server`는 시연용 mock backend입니다. Render 무료 인스턴스에서는 일정 시간 요청이 없으면 서버가 잠들 수 있고, 재시작 시 런타임 중 변경된 데이터가 유지되지 않을 수 있습니다. 실제 서비스로 확장한다면 Supabase, Firebase, PostgreSQL 같은 영속 DB로 이전하는 것을 권장합니다.

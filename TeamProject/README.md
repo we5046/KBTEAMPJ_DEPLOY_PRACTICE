@@ -4,8 +4,12 @@
   <img src="./src/assets/Logo.png" alt="가계쀼 로고" width="120" />
 </p>
 
+<h3 align="center">부부와 개인이 함께 쓰는 KB 스타일 가계부 웹 애플리케이션</h3>
+
 <p align="center">
-  부부와 개인이 함께 쓰는 KB 스타일 가계부 웹 애플리케이션
+  <a href="https://kbteampj-deploy-practice.vercel.app/auth/login">
+    <strong>배포된 프로젝트 체험하기</strong>
+  </a>
 </p>
 
 <p align="center">
@@ -18,6 +22,8 @@
 </p>
 
 <p align="center">
+  <a href="#소개">소개</a> ·
+  <a href="#팀원-소개">팀원 소개</a> ·
   <a href="#주요-기능">주요 기능</a> ·
   <a href="#기술-스택">기술 스택</a> ·
   <a href="#실행-방법">실행 방법</a> ·
@@ -36,6 +42,18 @@
 로그인, 회원가입, 거래 내역 관리, 카테고리별 지출 확인, 커플 연결, 공동 목표 관리까지 하나의 흐름으로 사용할 수 있도록 구성했습니다.
 
 > Figma 기반 UI를 Vue 애플리케이션으로 구현하고, `json-server`를 활용해 API 흐름을 시연할 수 있도록 만든 팀 프로젝트입니다.
+
+## 팀원 소개
+
+| 팀원 | GitHub | 소개 |
+| --- | --- | --- |
+| we5046 | [@we5046](https://github.com/we5046) | 프로젝트 배포, API 연동 환경 구성, 프론트엔드 기능 구현 |
+| heokyeongmin390 | [@heokyeongmin390](https://github.com/heokyeongmin390) | 프론트엔드 화면 구현 및 사용자 플로우 개선 |
+| 7aeHoon | [@7aeHoon](https://github.com/7aeHoon) | UI 컴포넌트 구현 및 페이지 완성도 개선 |
+| 한승연 | - | 프론트엔드 기능 구현 및 데이터 흐름 개선 |
+| hoon | - | 화면 구성 및 기능 구현 기여 |
+
+> 팀원별 담당 영역과 한줄 소개는 실제 역할에 맞게 자유롭게 수정하면 됩니다.
 
 ## 주요 기능
 
@@ -121,7 +139,7 @@ npm run dev
 ```txt
 Vercel
   Vue/Vite Frontend
-  VITE_API_BASE_URL=https://kb-budget-api.onrender.com
+  https://kbteampj-deploy-practice.vercel.app/auth/login
 
 Render
   json-server Backend
