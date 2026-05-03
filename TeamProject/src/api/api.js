@@ -79,11 +79,14 @@ const requestSupabase = async ({ method, url, data, config }) => {
     method,
     headers: {
       apikey: supabaseAnonKey,
-      Authorization: `Bearer ${supabaseAnonKey}`,
       'Content-Type': 'application/json',
       Prefer: 'return=representation',
     },
   };
+
+  if (!supabaseAnonKey.startsWith('sb_publishable_')) {
+    fetchOptions.headers.Authorization = `Bearer ${supabaseAnonKey}`;
+  }
 
   if (data && method !== 'GET') {
     fetchOptions.body = JSON.stringify(data);
