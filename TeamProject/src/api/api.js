@@ -12,7 +12,7 @@ import axios from 'axios';
  * - 모든 API 요청의 기본 설정을 포함
  */
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: import.meta.env.VITE_API_BASE_URL || '/api',
 });
 
 export default api;

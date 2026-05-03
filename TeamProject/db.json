@@ -886,15 +886,15 @@
       "date": "2026-03-12"
     }
   ],
-  "couples": [],
-  "coupleRequests": [
+  "couples": [
     {
-      "fromId": 2,
-      "toId": 1,
-      "status": "pending",
-      "createdAt": "2026-04-13T01:27:25.243Z",
+      "user1Id": 2,
+      "user2Id": 1,
+      "status": true,
+      "createdAt": "2026-04-26T16:27:34.083Z",
       "id": 1
     }
   ],
+  "coupleRequests": [],
   "coupleGoals": []
 }
